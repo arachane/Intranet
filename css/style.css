@@ -4,9 +4,36 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: white;
 }
+
 .nav-link {
   margin-left: 7px;
   font-size: 1.5em;
-  }
+}
+
+.menu {
+  padding-top: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.news {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#safety {
+  font-weight: bolder;
+  color: red;
+}
+
+#quality {
+  font-weight: bolder;
+  color: green;
+}
+
+#upcoming {
+  font-weight: bolder;
+  color: blue;
+}
