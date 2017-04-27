@@ -22,7 +22,7 @@ body {
 .news {
   text-align: left;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -42,6 +42,12 @@ body {
 }
 
 #topic-image {
-  margin: 0 auto;
+  margin: auto;
+  text-align: center;
 
+}
+.page-heading {
+  text-align: center;
+  padding-bottom: 20px;
+  
 }
