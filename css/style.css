@@ -10,11 +10,11 @@ body {
 
 .nav-link {
   margin-left: 7px;
-  font-size: 1.0em;
+  font-size: 1.5em;
 }
 
 .menu {
-  padding-top: 30px;
+  padding-top: 110px;
   font-size: 1.5em;
   font-weight: bold;
   margin: 10px;
@@ -22,7 +22,7 @@ body {
 
 .news {
   text-align: left;
-  padding-top: 20px;
+  padding-top: 110px;
   font-size: 1em;
   font-weight: bold;
 }
@@ -45,10 +45,24 @@ body {
 #topic-image {
   margin: auto;
   text-align: center;
-
 }
+.img-fluid {
+  margin: auto;
+}
+
 .page-heading {
   text-align: center;
   padding-bottom: 20px;
-
+}
+.levels {
+  margin-top: 90px;
+}
+.trouble {
+  padding-top: 110px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+}
+.pdf-container {
+  padding-top: 100px;
 }
