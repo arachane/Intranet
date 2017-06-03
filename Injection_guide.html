@@ -6,10 +6,12 @@
   <title>Injection Troubleshooting</title>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="css\jquery-3.2.1.min.js"></script>
+  <script src="css\tether.min.js"></script>
+
+  <link rel="stylesheet" href="css\tether.min.css">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <script src="css\bootstrap.min.js"></script>
   <link rel='stylesheet' href='css/style.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -20,22 +22,46 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <a class="navbar-brand font-weight-bold" href="index.html">Tumwater Injection</a>
-
+      <a class="navbar-brand font-weight-bold" href="index.html">Tumwater Intranet</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trouble-guide.html">Troubleshooting Guides </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="trouble-guide.html">Troubleshooting Guides <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="work_instructions.html">Work Instructions </a>
-          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="work_instructions.html">Work Instructions</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="manuals.html">Machine Manuals </a>
           </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Injection Op  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Entry Level</a></li>
+                <li><a href="#">Level 1</a></li>
+                <li><a href="#">Level 2</a></li>
+                <!-- <li role="separator" class="divider"></li> -->
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 4</a></li>
+                <li><a href="#">Injection Lead</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blow Mold Op  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Entry Level</a></li>
+                <li><a href="#">Level 1</a></li>
+                <li><a href="#">Level 2</a></li>
+                <!-- <li role="separator" class="divider"></li> -->
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 4</a></li>
+                <li><a href="#">Blow Mold Lead</a></li>
+              </ul>
+            </li>
+
         </ul>
       </div>
     </nav>
@@ -43,48 +69,8 @@
     <div class="container-fluid">
 
       <h3 class="page-heading">Injection Defect Troubleshooting Guide</h3>
-
-      <select class="custom-select" name="defect-type" id="defect">
-        <option value="" selected>Defect</option>
-        <option value="highAa">High AA</option>
-        <option value="bubbles">Bubbles in preforms</option>
-        <option value="">Burn Marks</option>
-        <option value="">Crystalinity</option>
-        <option value="">Contamination</option>
-        <option value="">Degradation of Material</option>
-        <option value="">Drool in Cavities</option>
-        <option value="">Flash</option>
-        <option value="">Gate Quality</option>
-        <option value="">Glycon screws</option>
-        <option value="">Haze</option>
-        <option value="">Hot Core</option>
-        <option value="">Intrinsic Viscosity (IV) drop</option>
-        <option value="">Minute Short shots</option>
-        <option value="">Nicks on Support Ledge</option>
-        <option value="">Parting Line Indentation</option>
-        <option value="">Pinhole (Gate Void)</option>
-        <option value="">Scratches / Surface Blemishes</option>
-        <option value="">Short Shots</option>
-        <option value="">Splay</option>
-        <option value="">Warped parts (Sink Marks)</option>
-        <option value="">Wall Thickness Variation</option>
-        <option value="">Weld Lines</option>
-        <option value="">Unmelts</option>
-        <option value="">Voids in Support Ledge</option>
-      </select>
-<h3>Possible Cause</h3>
-      <ul id="cause">
-
-      </ul>
-<h3>Suggested Remedy</h3>
-      <ul id="remedy">
-
-      </ul>
-
-
-    </div>
-  </div>
-  <script type="text/javascript" src = "defects.js">
-
-  </script>
+<div class="container">
+      <!-- <iframe src="INJECTION TROUBLESHOOTING GUIDE.pdf" width="1200px" height="700px" border="0"></iframe> -->
+      <embed src="INJECTION TROUBLESHOOTING GUIDE.pdf#view=FitH" width="1200px" height="700px" />
+</div>
 </body>
