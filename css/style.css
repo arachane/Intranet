@@ -46,6 +46,7 @@ body {
   margin: auto;
   text-align: center;
 }
+
 .img-fluid {
   margin: auto;
 }
@@ -54,15 +55,18 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .levels {
   margin-top: 90px;
 }
+
 .trouble {
   padding-top: 110px;
   font-size: 1.5em;
   font-weight: bold;
   margin: 10px;
 }
+
 .pdf-container {
   padding-top: 100px;
 }
